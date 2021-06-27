@@ -43,7 +43,7 @@ def add_student():
 
 # Display list of students
 def list_students():
-    global Student_file
+    global Student_databse
     global Student_database
     
     print("------------------------")
@@ -54,7 +54,7 @@ def list_students():
         reader = csv.reader(f)
         for x in Student_file:
             print( x, end = "\n   ")
-        print("\n----------------------------------------------------------")
+        print()
         
         for row in reader:
             for item in row:
